@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet.css') }}" />
+    <meta charset="UTF-8">
+    <title>SPARQL Tests</title>
+</head>
+<body>
+<div id="box">
+    <div id="input3">
+    <td valign="top" color=red>DBIS</td>
+
+    <img style="position:absolute; right:0px; top:-200px; width:800px; height:800px; border:none;"src="{{ url_for('static', filename='logo-uni-ulm.svg') }}"/>
+</div>
+
+
+
+<div id="input2">
+    Queries for triples
+</div>
+ <p></p>
+    <a href='quads' class='btn'>
+  Go to queries for quads
+</a>
+    <p></p>
+<div id="input">
+<form action="#" method="post">
+    <label for="dataset">Dataset</label>
+    <select id="dataset" name="dataset">
+        {% for item in datasets %}
+         <option>{{item}}</option>
+        {% endfor %}
+    </select><br>
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Your subject" value ={{requested.subject}}>
+
+    <input type="checkbox" id="subSu" name="subSu" value="Substring search" class="largerCheckbox" {{requested.subSu}}>
+        <label for="subSu">Substring search</label>
+    <input type="checkbox" id="eSu" name="eSu" value="Allow empty" class="largerCheckbox" {{requested.eSu}}>
+        <label for="eSu">Allow empty</label>
+    <input type="checkbox" id="strSu" name="strSu" value="String" class="largerCheckbox" {{requested.strSu}}>
+        <label for="strSu">String</label><br>
+
+
+
+    <label for="predicate">Predicate</label>
+    <input type="text" id="predicate" name="predicate" placeholder="Your predicate" value ={{requested.predicate}}>
+
+    <label for="predicatePre">Prefix</label>
+    <select id="predicatePre" name="predicatePre">
+        {% for item in prefix %}
+         <option>{{item}}</option>
+        {% endfor %}
+    </select>
+
+    <input type="checkbox" id="subPre" name="subPre" value="Substring search" class="largerCheckbox" {{requested.subPre}}>
+        <label for="subPre">Substring search</label>
+    <input type="checkbox" id="ePre" name="ePre" value="Allow empty" class="largerCheckbox" {{requested.ePre}}>
+        <label for="ePre">Allow empty</label><br>
+    <br>
+
+
+
+     <label for="object">Object</label>
+    <input type="text" id="object" name="object" placeholder="Your object"  value ={{requested.object}}>
+
+    <input type="checkbox" id="subOb" name="subOb" value="Substring search" class="largerCheckbox" {{requested.subOb}}>
+        <label for="subOb">Substring search</label>
+     <input type="checkbox" id="eOb" name="eOb" value="Allow empty" class="largerCheckbox" {{requested.eOb}}>
+        <label for="eOb">Allow empty</label>
+    <input type="checkbox" id="strOb" name="strOb" value="String" class="largerCheckbox" {{requested.strOb}}>
+        <label for="strOb">String</label><br>
+    <br>
+
+
+
+
+
+
+
+
+    <p><input type="submit" value="submit"/> </p>
+</form>
+</div>
+<div class="listbox-area">
+  <div>
+    <span id="ss_elem" class="listbox-label">
+      Answers ({{requested.answers}}):
+    </span>
+    <ul id="ss_elem_list"
+        tabindex="0"
+        role="listbox"
+        aria-labelledby="ss_elem">
+    {% for item in data %}
+        <li>Subject: {{item.s}}</li>
+        <li>Predicate:{{item.p}}</li>
+        <li>Object: {{item.o}}</li>
+        <p></p>
+    {% endfor %}
+        <div id="example">{{error}}</div>
+    </ul>
+ </div>
+</div>
+</body>
+</html>

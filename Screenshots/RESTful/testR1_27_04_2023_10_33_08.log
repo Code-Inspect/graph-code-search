@@ -1,0 +1,135 @@
+2023-04-27 10:33:08,491 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-27 10:33:08,492 INFO: [33mPress CTRL+C to quit[0m
+2023-04-27 10:33:14,117 INFO: 127.0.0.1 - - [27/Apr/2023 10:33:14] "[33mGET / HTTP/1.1[0m" 404 -
+2023-04-27 10:33:23,605 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o } filter( regex(str(?g),"s" ) )  }
+        ORDER BY ?g
+        
+
+2023-04-27 10:33:24,088 INFO: 127.0.0.1 - - [27/Apr/2023 10:33:24] "GET /graph/s HTTP/1.1" 200 -
+2023-04-27 10:33:33,900 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o } filter( regex(str(?g),"data" ) )  }
+        ORDER BY ?g
+        
+
+2023-04-27 10:33:34,047 INFO: 127.0.0.1 - - [27/Apr/2023 10:33:34] "GET /graph/data HTTP/1.1" 200 -
+2023-04-27 10:33:56,903 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?s),"data" ) )}   }
+        ORDER BY ?g
+        
+
+2023-04-27 10:33:56,907 INFO: 127.0.0.1 - - [27/Apr/2023 10:33:56] "GET /subject/data HTTP/1.1" 200 -
+2023-04-27 10:34:13,621 INFO: 127.0.0.1 - - [27/Apr/2023 10:34:13] "[33mGET /predicate/data HTTP/1.1[0m" 404 -
+2023-04-27 10:34:28,085 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?p),"data" ) )}   }
+        ORDER BY ?g
+        
+
+2023-04-27 10:34:28,217 INFO: 127.0.0.1 - - [27/Apr/2023 10:34:28] "GET /property/data HTTP/1.1" 200 -
+2023-04-27 10:34:41,763 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?p),"test" ) )}   }
+        ORDER BY ?g
+        
+
+2023-04-27 10:34:41,894 INFO: 127.0.0.1 - - [27/Apr/2023 10:34:41] "GET /property/test HTTP/1.1" 200 -
+2023-04-27 10:34:45,527 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?p),"type" ) )}   }
+        ORDER BY ?g
+        
+
+2023-04-27 10:34:45,668 INFO: 127.0.0.1 - - [27/Apr/2023 10:34:45] "GET /property/type HTTP/1.1" 200 -
+2023-04-27 10:34:58,455 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?o),"data" ) )}   }
+        ORDER BY ?g
+        
+
+2023-04-27 10:34:58,602 INFO: 127.0.0.1 - - [27/Apr/2023 10:34:58] "GET /object/data HTTP/1.1" 200 -
+2023-04-27 10:35:08,024 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?o),"test" ) )}   }
+        ORDER BY ?g
+        
+
+2023-04-27 10:35:08,169 INFO: 127.0.0.1 - - [27/Apr/2023 10:35:08] "GET /object/test HTTP/1.1" 200 -
+2023-04-27 10:35:20,437 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?o),"data" ) )}   }
+        ORDER BY ?g
+        
+
+2023-04-27 10:35:20,576 INFO: 127.0.0.1 - - [27/Apr/2023 10:35:20] "GET /object/data HTTP/1.1" 200 -
+2023-04-27 10:35:26,032 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?o),"block" ) )}   }
+        ORDER BY ?g
+        
+
+2023-04-27 10:35:26,180 INFO: 127.0.0.1 - - [27/Apr/2023 10:35:26] "GET /object/block HTTP/1.1" 200 -
+2023-04-27 10:35:47,038 INFO: 127.0.0.1 - - [27/Apr/2023 10:35:47] "[33mGET /data/data/data/data HTTP/1.1[0m" 404 -
+2023-04-27 10:36:05,436 INFO: 127.0.0.1 - - [27/Apr/2023 10:36:05] "[32mGET /quad/data/data/data/data HTTP/1.1[0m" 308 -
+2023-04-27 10:36:05,451 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?s),"data" ) ) filter( regex(str(?p),"data" ) ) filter( regex(str(?o),"data" ) )}  filter( regex(str(?g),"data" ) ) }
+        ORDER BY ?g
+        
+
+2023-04-27 10:36:05,677 INFO: 127.0.0.1 - - [27/Apr/2023 10:36:05] "GET /quad/data/data/data/data/ HTTP/1.1" 200 -
+2023-04-27 10:36:25,452 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?s),"s" ) ) filter( regex(str(?p),"s" ) ) filter( regex(str(?o),"s" ) )}  filter( regex(str(?g),"s" ) ) }
+        ORDER BY ?g
+        
+
+2023-04-27 10:36:25,738 INFO: 127.0.0.1 - - [27/Apr/2023 10:36:25] "GET /quad/s/s/s/s/ HTTP/1.1" 200 -
+2023-04-27 10:36:40,604 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?s),"t" ) ) filter( regex(str(?p),"t" ) ) filter( regex(str(?o),"t" ) )}  filter( regex(str(?g),"t" ) ) }
+        ORDER BY ?g
+        
+
+2023-04-27 10:36:40,935 INFO: 127.0.0.1 - - [27/Apr/2023 10:36:40] "GET /quad/t/t/t/t/ HTTP/1.1" 200 -
+2023-04-27 10:37:34,922 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?s),"subject" ) ) filter( regex(str(?p),"property" ) ) filter( regex(str(?o),"object" ) )}  filter( regex(str(?g),"graph" ) ) }
+        ORDER BY ?g
+        
+
+2023-04-27 10:37:35,161 INFO: 127.0.0.1 - - [27/Apr/2023 10:37:35] "GET /quad/graph/subject/property/object/ HTTP/1.1" 200 -
+2023-04-27 10:37:57,332 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?s),"" ) ) filter( regex(str(?p),"" ) ) filter( regex(str(?o),"" ) )}  filter( regex(str(?g),"graph" ) ) }
+        ORDER BY ?g
+        
+
+2023-04-27 10:37:57,651 INFO: 127.0.0.1 - - [27/Apr/2023 10:37:57] "GET /quad/graph/*/*/*/ HTTP/1.1" 200 -
+2023-04-27 10:38:01,646 ERROR: Query:
+        SELECT ?g ?s ?p ?o
+        WHERE {
+         GRAPH ?g { ?s ?p ?o  filter( regex(str(?s),"" ) ) filter( regex(str(?p),"" ) ) filter( regex(str(?o),"" ) )}  filter( regex(str(?g),"" ) ) }
+        ORDER BY ?g
+        
+
+2023-04-27 10:38:01,975 INFO: 127.0.0.1 - - [27/Apr/2023 10:38:01] "GET /quad/*/*/*/*/ HTTP/1.1" 200 -

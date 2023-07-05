@@ -1,0 +1,286 @@
+2023-04-27 10:44:53,958 WARNING:  * Debugger is active!
+2023-04-27 10:44:53,983 INFO:  * Debugger PIN: 117-480-755
+2023-04-27 10:45:03,189 INFO: Called Home/GET
+2023-04-27 10:45:03,222 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:03] "GET / HTTP/1.1" 200 -
+2023-04-27 10:45:03,303 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:03] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:45:03,326 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:03] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:45:12,434 INFO: Called Triples/GET
+2023-04-27 10:45:12,464 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:12] "GET /triples HTTP/1.1" 200 -
+2023-04-27 10:45:12,548 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:12] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:45:12,568 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:12] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:45:30,107 INFO: Called Triples/GET
+2023-04-27 10:45:30,111 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:30] "GET /triples HTTP/1.1" 200 -
+2023-04-27 10:45:30,162 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:30] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:45:30,177 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:30] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:45:34,642 INFO: Called Quads/GET
+2023-04-27 10:45:34,662 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:34] "GET /quads HTTP/1.1" 200 -
+2023-04-27 10:45:34,711 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:34] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:45:34,728 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:34] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:45:38,027 INFO: Called Triples/GET
+2023-04-27 10:45:38,033 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:38] "GET /triples HTTP/1.1" 200 -
+2023-04-27 10:45:38,077 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:38] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:45:38,098 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:38] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:45:43,529 INFO: Called Quads/GET
+2023-04-27 10:45:43,539 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:43] "GET /quads HTTP/1.1" 200 -
+2023-04-27 10:45:43,628 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:43] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:45:43,649 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:43] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:45:47,576 INFO: Called Triples/GET
+2023-04-27 10:45:47,582 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:47] "GET /triples HTTP/1.1" 200 -
+2023-04-27 10:45:47,634 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:47] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:45:47,654 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:47] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:45:50,485 INFO: Called Triples/POST
+2023-04-27 10:45:50,884 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:45:51,212 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:51] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:45:51,251 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:51] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:45:51,268 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:51] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:45:57,184 INFO: Called Triples/POST
+2023-04-27 10:45:57,471 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:45:57,674 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:57] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:45:57,714 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:57] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:45:57,728 INFO: 127.0.0.1 - - [27/Apr/2023 10:45:57] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:46:01,785 INFO: Called Triples/POST
+2023-04-27 10:46:02,060 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:46:02,092 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:02] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:46:02,139 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:02] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:46:02,152 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:02] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:46:07,569 INFO: Called Triples/POST
+2023-04-27 10:46:07,842 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:46:08,115 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:08] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:46:08,151 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:08] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:46:08,166 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:08] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:46:08,705 INFO: Called Triples/POST
+2023-04-27 10:46:08,815 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:46:08,998 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:08] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:46:09,039 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:09] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:46:09,052 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:09] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:46:26,008 INFO: Called Triples/POST
+2023-04-27 10:46:26,120 INFO: Query:
+        PREFIX pre:<http://xmlns.com/foaf/0.1/>
+        SELECT ?s  ?o
+        WHERE {
+         ?s pre:maker ?o  filter( regex(str(?s),"" ) )   filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:46:26,129 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:26] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:46:26,167 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:26] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:46:26,186 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:26] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:46:41,764 INFO: Called Triples/POST
+2023-04-27 10:46:41,875 INFO: Query:
+        PREFIX pre:<http://xmlns.com/foaf/0.1/>
+        SELECT ?s  ?o
+        WHERE {
+         ?s pre:maker ?o  filter( regex(str(?s),"43" ) )   filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:46:41,881 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:41] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:46:41,914 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:41] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:46:41,928 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:41] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:46:47,216 INFO: Called Triples/POST
+2023-04-27 10:46:47,327 INFO: Query:
+        PREFIX pre:<http://xmlns.com/foaf/0.1/>
+        SELECT   ?o
+        WHERE {
+         <43> pre:maker ?o    filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:46:47,334 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:47] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:46:47,375 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:47] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:46:47,390 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:47] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:46:56,186 INFO: Called Quads/GET
+2023-04-27 10:46:56,190 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:56] "GET /quads HTTP/1.1" 200 -
+2023-04-27 10:46:56,235 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:56] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:46:56,253 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:56] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:46:56,891 INFO: Called Triples/GET
+2023-04-27 10:46:56,896 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:56] "GET /triples HTTP/1.1" 200 -
+2023-04-27 10:46:56,947 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:56] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:46:56,963 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:56] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:46:59,529 INFO: Called Quads/GET
+2023-04-27 10:46:59,533 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:59] "GET /quads HTTP/1.1" 200 -
+2023-04-27 10:46:59,579 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:59] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:46:59,598 INFO: 127.0.0.1 - - [27/Apr/2023 10:46:59] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:47:00,014 INFO: Called Triples/GET
+2023-04-27 10:47:00,019 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:00] "GET /triples HTTP/1.1" 200 -
+2023-04-27 10:47:00,070 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:00] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:47:00,085 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:00] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:47:01,019 INFO: Called Triples/POST
+2023-04-27 10:47:01,214 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:47:01,532 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:01] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:47:01,571 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:01] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:47:01,590 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:01] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:47:08,851 INFO: Called Triples/POST
+2023-04-27 10:47:08,974 ERROR: Query:
+        
+        SELECT   
+        WHERE {
+         <> <> <>    }  
+
+2023-04-27 10:47:08,979 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:08] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:47:09,026 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:09] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:47:09,042 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:09] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:47:28,214 INFO: Called Triples/POST
+2023-04-27 10:47:28,315 ERROR: Query:
+        
+        SELECT   
+        WHERE {
+         <test> <test> <test>    }  
+
+2023-04-27 10:47:28,319 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:28] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:47:28,357 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:28] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:47:28,370 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:28] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:47:47,095 INFO: Called Triples/POST
+2023-04-27 10:47:47,205 INFO: Query:
+        
+        SELECT ?s  
+        WHERE {
+         ?s <test> <test>  filter( regex(str(?s),"test" ) )   }  
+
+2023-04-27 10:47:47,210 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:47] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:47:47,243 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:47] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:47:47,258 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:47] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:47:50,881 INFO: Called Triples/POST
+2023-04-27 10:47:51,023 INFO: Query:
+        
+        SELECT ?s  
+        WHERE {
+         ?s <test> <test>  filter( regex(str(?s),"" ) )   }  
+
+2023-04-27 10:47:51,028 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:51] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:47:51,063 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:51] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:47:51,078 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:51] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:47:52,493 INFO: Called Triples/POST
+2023-04-27 10:47:52,615 INFO: Query:
+        
+        SELECT ?s  
+        WHERE {
+         ?s <test> <test>  filter( regex(str(?s),"" ) )   }  
+
+2023-04-27 10:47:52,620 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:52] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:47:52,654 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:52] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:47:52,667 INFO: 127.0.0.1 - - [27/Apr/2023 10:47:52] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:48:00,085 INFO: Called Triples/POST
+2023-04-27 10:48:00,195 INFO: Query:
+        
+        SELECT ?s ?p 
+        WHERE {
+         ?s ?p <test>  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  }  
+
+2023-04-27 10:48:00,200 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:00] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:48:00,233 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:00] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:48:00,248 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:00] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:48:01,062 INFO: Called Triples/POST
+2023-04-27 10:48:01,180 INFO: Query:
+        
+        SELECT ?s ?p 
+        WHERE {
+         ?s ?p <test>  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  }  
+
+2023-04-27 10:48:01,185 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:01] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:48:01,216 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:01] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:48:01,231 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:01] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:48:02,131 INFO: Called Triples/POST
+2023-04-27 10:48:02,251 INFO: Query:
+        
+        SELECT ?s ?p 
+        WHERE {
+         ?s ?p <test>  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  }  
+
+2023-04-27 10:48:02,257 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:02] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:48:02,290 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:02] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:48:02,307 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:02] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:48:04,986 INFO: Called Triples/POST
+2023-04-27 10:48:05,118 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"test" ) ) }  
+
+2023-04-27 10:48:05,331 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:05] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:48:05,363 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:05] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:48:05,375 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:05] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:48:06,030 INFO: Called Triples/POST
+2023-04-27 10:48:06,147 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"test" ) ) }  
+
+2023-04-27 10:48:06,355 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:06] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:48:06,388 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:06] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:48:06,403 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:06] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:48:12,424 INFO: Called Triples/POST
+2023-04-27 10:48:12,558 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"test" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:48:12,757 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:12] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:48:12,785 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:12] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:48:12,799 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:12] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:48:13,780 INFO: Called Triples/POST
+2023-04-27 10:48:13,903 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"test" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:48:14,116 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:14] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:48:14,151 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:14] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:48:14,164 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:14] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:48:14,560 INFO: Called Triples/POST
+2023-04-27 10:48:14,686 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"test" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:48:14,900 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:14] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:48:14,937 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:14] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:48:14,950 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:14] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:48:18,913 INFO: Called Triples/POST
+2023-04-27 10:48:19,047 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:48:19,286 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:19] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:48:19,325 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:19] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:48:19,341 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:19] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -
+2023-04-27 10:48:24,887 INFO: Called Triples/POST
+2023-04-27 10:48:25,013 INFO: Query:
+        
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o  filter( regex(str(?s),"blanknode" ) )  filter( regex(str(?p),"" ) )  filter( regex(str(?o),"" ) ) }  
+
+2023-04-27 10:48:25,235 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:25] "POST /triples HTTP/1.1" 200 -
+2023-04-27 10:48:25,272 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:25] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2023-04-27 10:48:25,287 INFO: 127.0.0.1 - - [27/Apr/2023 10:48:25] "[36mGET /static/logo-uni-ulm.svg HTTP/1.1[0m" 304 -

@@ -28,3 +28,12 @@ python summary.py [path/to/file]
 ```
 path/to/file: determines the file that is read to create the summary, e.g., converted.rdf.
 It also creates the DBs of the summaries.
+
+## Homepage
+![home_page](Screenshots/GUI/home.png)
+## Datasets (different summaries + original)
+![datasets](Screenshots/GUI/datasetsQuads.png)
+## Search
+![search](Screenshots/GUI/search.png)
+## Query Representation in JSON
+![json](Screenshots/RESTful/quadQuery.png)
